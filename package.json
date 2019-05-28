@@ -1,9 +1,9 @@
 {
-  "name": "cordova-plugin-password-dialog",
-  "version": "1.2.0",
+  "name": "cordova-plugin-password-dialog-fork",
+  "version": "1.2.1",
   "description": "Cordova plugin for showing password prompt dialogs.",
   "cordova": {
-    "id": "cordova-plugin-password-dialog",
+    "id": "cordova-plugin-password-dialog-fork",
     "platforms": [
       "android",
       "ios"
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/justin-credible/cordova-plugin-password-dialog"
+    "url": "https://github.com/Daniel-Uzcategui/cordova-plugin-password-dialog"
   },
   "keywords": [
     "cordova",
