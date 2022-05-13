@@ -152,14 +152,16 @@ public final class PasswordDialogPlugin extends CordovaPlugin {
         }
 
         // Obtain the arguments.
-
-        final String title = args.getString(0) == null ? "Enter Password" : args.getString(0);
-        final String message = args.getString(1) == null ? "" : args.getString(1);
-        final int minLength = args.getInt(2);
+        JSONObject _args = jsonarray.getJSONObject(i);
+        
+        final String title = _args.getString('title') == null ? "Enter Password" : _args.getString('title');
+        final String message = _args.getString('message') == null ? "" : _args.getString('message');
+        final int minLength = _args.getInt('minLength');
+        final String theme = _args.getString('theme');
 
          cordova.getActivity().runOnUiThread(new Runnable() {
              public void run() {
-                 PasswordDialogPlugin.this.showEnterPasswordPrompt(title, message, minLength, callbackContext);
+                 PasswordDialogPlugin.this.showEnterPasswordPrompt(title, message, minLength, callbackContext, theme);
              }
          });
     }
@@ -412,12 +414,16 @@ public final class PasswordDialogPlugin extends CordovaPlugin {
      * @param minLength The minimum length for the new password; -1 to not enforce.
      * @param callbackContext The Cordova plugin callback context.
      */
-    private void showEnterPasswordPrompt(String title, String message, final int minLength, final CallbackContext callbackContext) {
+    private void showEnterPasswordPrompt(String title, String message, final int minLength, final CallbackContext callbackContext, final String theme) {
 
+        int _theme = AlertDialog.THEME_DEVICE_DEFAULT_LIGHT;
+        if(theme.equals("dark")) {
+              _theme = AlertDialog.THEME_DEVICE_DEFAULT_DARK;
+        }
         // Create the builder for the dialog.
         Activity activity = PasswordDialogPlugin.this.cordova.getActivity();
         AlertDialog.Builder builder = new AlertDialog.Builder(activity,
-                AlertDialog.THEME_DEVICE_DEFAULT_LIGHT);
+                _theme);
 
         // Grab the dialog layout XML resource pointer.
         int dialogResource = R.getId("layout", "enter_password_dialog");
