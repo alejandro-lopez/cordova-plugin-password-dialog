@@ -92,8 +92,12 @@ PasswordDialogPlugin.showEnterPassword = function showEnterPassword(options, suc
     if (typeof(options.minLength) !== "number") {
         options.minLength = -1;
     }
+    
+    if (typeof(options.theme) !== "string") {
+        options.theme = "light";
+    }
 
-    exec(successCallback, failureCallback, PLUGIN_ID, "showEnterPassword", [options.title, options.message, options.minLength]);
+    exec(successCallback, failureCallback, PLUGIN_ID, "showEnterPassword", [options.title, options.message, options.minLength, options.theme]);
 };
 
 /**
