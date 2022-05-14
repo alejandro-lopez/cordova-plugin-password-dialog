@@ -157,7 +157,7 @@ public final class PasswordDialogPlugin extends CordovaPlugin {
         final String title = args.getString(0) == null ? "Enter Password" : args.getString(0);
         final String message = args.getString(1) == null ? "" : args.getString(1);
         final int minLength = args.getInt(2);
-        final String theme = args.getString(3) == null ? 'light' : args.getString(3);
+        final String theme = args.getString(3) == null ? "light" : args.getString(3);
 
          cordova.getActivity().runOnUiThread(new Runnable() {
              public void run() {
