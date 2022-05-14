@@ -146,7 +146,7 @@ public final class PasswordDialogPlugin extends CordovaPlugin {
     private void showEnterPassword(JSONArray args, final CallbackContext callbackContext) throws JSONException {
 
         // Ensure we have the correct number of arguments.
-        if (args.length() != 3) {
+        if (args.length() != 4) {
             callbackContext.error("A title, message, and minLength are required.");
             return;
         }
