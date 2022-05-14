@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.graphics.Typeface;
+import android.graphics.Color;
 import android.text.InputType;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
