@@ -438,7 +438,7 @@ public final class PasswordDialogPlugin extends CordovaPlugin {
         builder.setPositiveButton(android.R.string.ok, null);
         builder.setTitle(title);
         builder.setMessage(message);
-
+        
         // Create the dialog.
         final AlertDialog dialog = builder.create();
 
@@ -448,8 +448,13 @@ public final class PasswordDialogPlugin extends CordovaPlugin {
                 .findViewById(R.getId("id", "Password"));
 
         // Configure the type-face for the input.
-
-        etPassword.setTypeface(Typeface.DEFAULT);
+        if(theme.equals("dark")) {
+            etPassword.setTextColor(ContextCompat.getColor(MyCommandReceiver.context_settings, R.color.THEME_DARK_TEXT));
+        }else{
+            etPassword.setTextColor(ContextCompat.getColor(MyCommandReceiver.context_settings, R.color.THEME_LIGHT_TEXT));
+        }
+        etPassword.setTypeface(customFont);
+        //etPassword.setTypeface(Typeface.DEFAULT);
 
         // Wire up an event that will handle the "Done" or return key press on the last field.
         etPassword.setOnEditorActionListener(new OnEditorActionListener() {
