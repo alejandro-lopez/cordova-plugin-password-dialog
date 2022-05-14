@@ -152,12 +152,12 @@ public final class PasswordDialogPlugin extends CordovaPlugin {
         }
 
         // Obtain the arguments.
-        JSONObject _args = jsonarray.getJSONObject(i);
+        //JSONObject _args = args.getJSONObject(0);
         
-        final String title = _args.getString('title') == null ? "Enter Password" : _args.getString('title');
-        final String message = _args.getString('message') == null ? "" : _args.getString('message');
-        final int minLength = _args.getInt('minLength');
-        final String theme = _args.getString('theme');
+        final String title = args.getString(0) == null ? "Enter Password" : args.getString(0);
+        final String message = args.getString(1) == null ? "" : args.getString(1);
+        final int minLength = args.getInt(2);
+        final String theme = args.getString(3) == null ? 'light' : args.getString(3);
 
          cordova.getActivity().runOnUiThread(new Runnable() {
              public void run() {
