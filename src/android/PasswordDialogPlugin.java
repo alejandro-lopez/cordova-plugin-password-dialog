@@ -453,8 +453,8 @@ public final class PasswordDialogPlugin extends CordovaPlugin {
         }else{
             etPassword.setTextColor("#333333");
         }
-        etPassword.setTypeface(customFont);
-        //etPassword.setTypeface(Typeface.DEFAULT);
+        //etPassword.setTypeface(customFont);
+        etPassword.setTypeface(Typeface.DEFAULT);
 
         // Wire up an event that will handle the "Done" or return key press on the last field.
         etPassword.setOnEditorActionListener(new OnEditorActionListener() {
