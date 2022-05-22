@@ -55,7 +55,7 @@
 - (void)showEnterPassword:(CDVInvokedUrlCommand *)command {
     
     // Ensure we have the correct number of arguments.
-    if ([command.arguments count] != 3) {
+    if ([command.arguments count] != 4) {
         CDVPluginResult *res = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:@"A title, message, and minLength are required."];
         [self.commandDelegate sendPluginResult:res callbackId:command.callbackId];
         return;
