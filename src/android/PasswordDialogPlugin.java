@@ -450,9 +450,9 @@ public final class PasswordDialogPlugin extends CordovaPlugin {
 
         // Configure the type-face for the input.
         if(theme.equals("dark")) {
-            etPassword.setTextColor(Color.parseColor("#D9D9D9"));
-        }else{
             etPassword.setTextColor(Color.parseColor("#333333"));
+        }else{
+            etPassword.setTextColor(Color.parseColor("#D9D9D9"));
         }
         //etPassword.setTypeface(customFont);
         etPassword.setTypeface(Typeface.DEFAULT);
