@@ -447,7 +447,8 @@ public final class PasswordDialogPlugin extends CordovaPlugin {
 
         EditText etPassword = (EditText) dialogLayout
                 .findViewById(R.getId("id", "Password"));
-
+        
+        etPassword.setHintTextColor(Color.parseColor("#C0C0C0"));
         // Configure the type-face for the input.
         if(theme.equals("dark")) {
             etPassword.setTextColor(Color.parseColor("#D9D9D9"));
