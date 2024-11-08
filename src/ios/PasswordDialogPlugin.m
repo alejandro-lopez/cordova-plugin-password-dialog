@@ -192,7 +192,7 @@
                                                                    message:message
                                                             preferredStyle:UIAlertControllerStyleAlert];
     // Build the action handler.
-    UIAlertAction* alertOkAction = [UIAlertAction actionWithTitle:@"OK"
+    UIAlertAction* alertOkAction = [UIAlertAction actionWithTitle:@"Aceptar"
                                                             style:UIAlertActionStyleDefault
                                                           handler:^(UIAlertAction * action)
     {
@@ -230,7 +230,7 @@
     // Build the action handlers.
 
     // The action for the user OK-ing the confirm credentials dialog.
-    UIAlertAction* promptOkAction = [UIAlertAction actionWithTitle:@"OK"
+    UIAlertAction* promptOkAction = [UIAlertAction actionWithTitle:@"Aceptar"
                                                              style:UIAlertActionStyleDefault
                                                            handler:^(UIAlertAction * action)
     {
@@ -296,7 +296,7 @@
     }];
 
     // The action for the user cancelling the credentials dialog.
-    UIAlertAction* promptCancelAction = [UIAlertAction actionWithTitle:@"Cancel"
+    UIAlertAction* promptCancelAction = [UIAlertAction actionWithTitle:@"Cancelar"
                                                                  style:UIAlertActionStyleDefault
                                                                handler:^(UIAlertAction * action)
     {
@@ -351,7 +351,7 @@
                                                                    message:message
                                                             preferredStyle:UIAlertControllerStyleAlert];
     // Build the action handler.
-    UIAlertAction* alertOkAction = [UIAlertAction actionWithTitle:@"OK"
+    UIAlertAction* alertOkAction = [UIAlertAction actionWithTitle:@"Aceptar"
                                                             style:UIAlertActionStyleDefault
                                                           handler:^(UIAlertAction * action)
     {
@@ -385,7 +385,7 @@
     // Build the action handlers.
 
     // The action for the user OK-ing the confirm password dialog.
-    UIAlertAction* promptOkAction = [UIAlertAction actionWithTitle:@"OK"
+    UIAlertAction* promptOkAction = [UIAlertAction actionWithTitle:@"Aceptar"
                                                              style:UIAlertActionStyleDefault
                                                            handler:^(UIAlertAction * action)
     {
@@ -429,7 +429,7 @@
     }];
 
     // The action for the user cancelling the enter password dialog.
-    UIAlertAction* promptCancelAction = [UIAlertAction actionWithTitle:@"Cancel"
+    UIAlertAction* promptCancelAction = [UIAlertAction actionWithTitle:@"Cancelar"
                                                                  style:UIAlertActionStyleDefault
                                                                handler:^(UIAlertAction * action)
     {
@@ -476,7 +476,7 @@
                                                                    message:message
                                                             preferredStyle:UIAlertControllerStyleAlert];
     // Build the action handler.
-    UIAlertAction* alertOkAction = [UIAlertAction actionWithTitle:@"OK"
+    UIAlertAction* alertOkAction = [UIAlertAction actionWithTitle:@"Aceptar"
                                                             style:UIAlertActionStyleDefault
                                                           handler:^(UIAlertAction * action)
     {
@@ -510,7 +510,7 @@
     // Build the action handlers.
 
     // The action for the user OK-ing the confirm password dialog.
-    UIAlertAction* promptOkAction = [UIAlertAction actionWithTitle:@"OK"
+    UIAlertAction* promptOkAction = [UIAlertAction actionWithTitle:@"Aceptar"
                                                              style:UIAlertActionStyleDefault
                                                            handler:^(UIAlertAction * action)
     {
@@ -579,7 +579,7 @@
     }];
 
     // The action for the user cancelling the confirm password dialog.
-    UIAlertAction* promptCancelAction = [UIAlertAction actionWithTitle:@"Cancel"
+    UIAlertAction* promptCancelAction = [UIAlertAction actionWithTitle:@"Cancelar"
                                                                  style:UIAlertActionStyleDefault
                                                                handler:^(UIAlertAction * action)
     {
@@ -631,7 +631,7 @@
                                                                    message:message
                                                             preferredStyle:UIAlertControllerStyleAlert];
     // Build the action handler.
-    UIAlertAction* alertOkAction = [UIAlertAction actionWithTitle:@"OK"
+    UIAlertAction* alertOkAction = [UIAlertAction actionWithTitle:@"Aceptar"
                                                             style:UIAlertActionStyleDefault
                                                           handler:^(UIAlertAction * action)
     {
@@ -665,7 +665,7 @@
     // Build the action handlers.
 
     // The action for the user OK-ing the change password dialog.
-    UIAlertAction* promptOkAction = [UIAlertAction actionWithTitle:@"OK"
+    UIAlertAction* promptOkAction = [UIAlertAction actionWithTitle:@"Aceptar"
                                                              style:UIAlertActionStyleDefault
                                                            handler:^(UIAlertAction * action)
     {
@@ -736,7 +736,7 @@
     }];
 
     // The action for the user cancelling the change password dialog.
-    UIAlertAction* promptCancelAction = [UIAlertAction actionWithTitle:@"Cancel"
+    UIAlertAction* promptCancelAction = [UIAlertAction actionWithTitle:@"Cancelar"
                                                                  style:UIAlertActionStyleDefault
                                                                handler:^(UIAlertAction * action)
     {
