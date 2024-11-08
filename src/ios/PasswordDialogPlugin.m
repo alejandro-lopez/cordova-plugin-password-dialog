@@ -309,9 +309,9 @@
 
         [self.commandDelegate sendPluginResult:pluginResult callbackId:callbackId];
     }];
-
-    [prompt addAction:promptOkAction];
+    
     [prompt addAction:promptCancelAction];
+    [prompt addAction:promptOkAction];
 
     // Build the input fields.
 
@@ -442,9 +442,9 @@
 
         [self.commandDelegate sendPluginResult:pluginResult callbackId:callbackId];
     }];
-
-    [prompt addAction:promptOkAction];
+    
     [prompt addAction:promptCancelAction];
+    [prompt addAction:promptOkAction];
 
     // Build the input fields.
 
